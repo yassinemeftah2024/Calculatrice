@@ -4,6 +4,11 @@ public class Operation {
     }
     public static int soustraction(int x, int y) { return x - y; }
     public static int addition(int x, int y) { return x + y; }
-    public static int division(int x, int y) { return x / y; }
-
+    public static int division(int x, int y) {
+       if (y != 0) {
+         return x / y;
+       } else {
+         return 0;
+       }
+    }
 }
